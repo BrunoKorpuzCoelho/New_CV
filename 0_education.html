@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education  |  Bruno Coelho</title>
+    <link rel="stylesheet" href="1_main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script>
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                startFlashing();
+            } else {
+                stopFlashing();
+            }
+        });
+
+        let originalTitle = document.title;
+        let flashingTitle = "Hello are you there?!";
+        let flashing;
+
+        function startFlashing() {
+            flashing = setInterval(function() {
+                document.title = document.title === originalTitle ? flashingTitle : originalTitle;
+            }, 1000);
+        }
+
+        function stopFlashing() {
+            clearInterval(flashing);
+            document.title = originalTitle;
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo image">
+                    <h2>Bruno <span class="danger"> Coelho</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined  close-menu">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="/index.html">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="/0_profile.html">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <h3>Profile</h3>
+                </a>
+                <a href="/0_projects.html">
+                    <span class="material-symbols-outlined">
+                        receipt_long
+                    </span>
+                    <h3>Projects</h3>
+                </a>
+                <a href="/0_education.html" class="active">
+                    <span class="material-symbols-outlined">
+                        school
+                    </span>
+                    <h3>Education</h3>
+                </a>
+                <a href="0_diplomas.html">
+                    <span class="material-symbols-outlined">
+                        history_edu
+                    </span>
+                    <h3>Diplomas</h3>
+                    <span class="message-count">8</span>
+                </a>
+                <a href="0_reviews.html">
+                    <span class="material-symbols-outlined">
+                        rate_review
+                    </span>
+                    <h3>Reviews</h3>
+                    <span class="message-count">2</span>
+                </a>
+                <a href="0_page_under.html">
+                    <span class="material-symbols-outlined">
+                        manufacturing
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+            </div>
+         </aside>
+         <!-- End of Sidebar -->
+
+         <!-- Main Content -->
+        <main class="profile-main">
+
+            <div class="profile-content">
+                <div class="education-header">
+                    <h1 class="education-title">Education</h1>
+                </div>
+
+                <section class="sections education-sections">
+
+                    <div class="about-me-education">
+                        <h3>Front-<span class="danger">End</span> Course:</h3>
+                        <p>2024/2024</p>
+                        <p>███ 40% Currently in Progress</p>
+                        <p>Institution - <span class="danger">Udemy</span></p>
+                        <p class="danger">Key Topics:</p>
+                        <ul>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>HTML</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>CSS</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>JavaScript</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>React JS</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>TypeScript whit React</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Responsive WebSites</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Semantic HTML</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Debugging and Code Refinement in JavaScript</li>
+                        </ul>
+                        <a href="0_page_under.html">For more information, click here!</a>
+                    </div>
+
+                    <div class="about-me-education">
+                        <h3><span class="danger">Python</span> Course:</h3>
+                        <p>2022/2024</p>
+                        <p>✅ Completed</p>
+                        <p>Institution - <span class="danger">Tokio School</span></p>
+                        <p class="danger">Key Topics:</p>
+                        <ul>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Programming Logic</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Data Manipulation</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Object-Oriented Programming (OOP)</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Data Processing</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Web Development (Flask)</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Database Management (SQL)</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Exception Handling</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Error and Bug Resolution</li>
+                        </ul>
+                        <a href="0_page_under.html">For more information, click here!</a>
+                    </div>
+
+                    <div class="about-me-education">
+                        <h3>Specialization in <span class="danger">Machine</span> Learning:</h3>
+                        <p>2022/2024</p>
+                        <p>████  55% Currently in Progress</p>
+                        <p>Institution - <span class="danger">Tokio School</span></p>
+                        <p class="danger">Key Topics:</p>
+                        <ul>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Logic for Handling Artificial Intelligence</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Supervised and Unsupervised Learning Algorithms</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Model Tuning and Selection</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Script Development for Data Analysis</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Data Cleaning</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Feature Transformation and Engineering</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Linear and Logistic Regression</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Decision Trees, Random Forests, and Gradient Boosting</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Practical Applications and Popular Algorithms (Q-Learning, Deep Q-Learning)</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Creation of APIs for Machine Learning Models</li>
+                        </ul>
+                        <a href="0_page_under.html">For more information, click here!</a>
+                    </div>
+
+                    <div class="about-me-education">
+                        <h3>SQL <span class="danger">Database</span> Course:</h3>
+                        <p>2024/2024</p>
+                        <p>█ 10% Currently in Progress</p>
+                        <p>Institution - <span class="danger">Udemy</span></p>
+                        <p class="danger">Key Topics:</p>
+                        <ul>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Proficient use of SQL for database querying</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Ability to create and interact with databases</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Skill in writing complex SQL queries involving multiple tables</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Experience in modeling real-world data and generating reports using SQL</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Advanced SQL techniques such as window functions and common table expressions</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Optimization of SQL queries for performance</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Understanding of database indexing and query optimization strategies</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Integration of SQL with programming languages for data manipulation</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Security practices for SQL databases</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Use of SQL in cloud-based environments</li>
+                        </ul>
+                        <a href="0_page_under.html">For more information, click here!</a>
+                    </div>
+
+                    <div class="about-me-education">
+                        <h3>Ethical <span class="danger">Hacking</span> Course:</h3>
+                        <p>2024/2024</p>
+                        <p>Scheduled for future</p>
+                        <p>Institution - <span class="danger">Udemy</span></p>
+                        <p class="danger">Key Topics:</p>
+                        <ul>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Importance of Ethical Hackers in the job market</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Legal aspects of the Pentester profession</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Proficiency in Linux environments and understanding of TCP/IP protocol stack operations</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Types of penetration testing and their appropriate applications</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Familiarity with techniques for exploiting vulnerabilities in computing environments</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Execution of a comprehensive Penetration Test, covering all technical stages</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Documenting requirements for client delivery post-Penetration Test</li>
+                        </ul>
+                        <a href="0_page_under.html">For more information, click here!</a>
+                    </div>
+
+                    <div class="about-me-education">
+                        <h3>Server <span class="danger">Administration</span> and Network Services:</h3>
+                        <p>2024/2024</p>
+                        <p>Scheduled for future</p>
+                        <p>Institution - <span class="danger">Udemy</span></p>
+                        <p class="danger">Key Topics:</p>
+                        <ul>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Concepts, operation, and implementation of DNS, HTTP, Email (SMTP, POP, and IMAP) servers, among others</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Perform configuration and log analysis for each network service covered in the course</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Understand that each protocol consists of a set of rules, enabling implementation on any platform (Windows, Linux, Appliances, etc.) once mastered</li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span></span>Implement network services in GNU/Linux and Microsoft environments, including security aspects and interoperability between platforms</li>
+                        </ul>
+                        <a href="0_page_under.html">For more information, click here!</a>
+                    </div>
+
+                </section>
+            </div>
+            <!-- End of Main Content -->
+
+        </main>
+        <!-- End of Main -->
+
+          <!-- Right Section -->
+           <section>
+                <div class="right-section">
+                    <!-- Nav -->
+                    <div class="nav">
+                        <button id="menu-btn">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                        <div class="dark-mode">
+                            <span class="material-symbols-outlined active">light_mode</span>
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </div>
+
+                        <!-- <div class="profile">
+                            <div class="info">
+                                <p>Hey, <b>Bruno</b></p>
+                                <small class="text-muted">Admin</small>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <!-- End of Nav -->
+
+                    <!-- User Profile -->
+                    <div class="user-profile">
+                        <div class="logo">
+                            <img src="logo.png" alt="Logo Photo">
+                            <h2>Bruno Coelho</h2>
+                            <p>Fullstack Web <span class="danger-espace">Developer</span></p>
+                        </div>
+                    </div>
+
+                    <div class="resume-profile">
+                        <div class="user-contacts-education">
+                            <div class="logo">
+                                <img src="perfil.png" alt="Profile Photo">
+                                <ul class="data-links-education">
+                                    <li><a href="https://api.whatsapp.com/send/?phone=351965576916&amp;text=Sua%20mensagem%20aqui" target="_blank" rel="noopener noreferrer" title="Whatsapp"><span class="material-symbols-outlined">phone_iphone</span></a></li> 
+                                    <li><a href="mailto:brunovcoelho.dev@gmail.com" title="E-mail"><span class="material-symbols-outlined">alternate_email</span></a></li>
+                                    <li><a href="https://github.com/BrunoKorpuzCoelho" title="Github"><span class="material-symbols-outlined">commit</span></a></li>
+                                    <li><a href="https://www.linkedin.com/in/bruno-coelho-aa4071212/" title="Linkedin"><span class="material-symbols-outlined">link</span></a></li>
+                                    <li><a href="https://www.instagram.com/bruno_coelhooo_/" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- End of User Profile -->
+                    
+                </div>
+
+
+                <div class="others-links">
+                    <h3>Additional <span class="danger">Resources:</span></h3>
+                    <ul>
+                        <li><a href="0_diplomas.html"><span class="material-symbols-outlined diplomas">history_edu</span>Diplomas</a></li>
+                        <li><a href="0_projects.html"><span class="material-symbols-outlined projects">receipt_long</span>Projects</a></li>
+                        <li><a href="0_page_under.html"><span class="material-symbols-outlined app-data">info</span>Application Data</a></li>
+                        <li><a href="0_page_under.html"><span class="material-symbols-outlined clone">system_update</span>Updates</a></li>
+                        <li><a href="0_reviews.html"><span class="material-symbols-outlined rate-review">rate_review</span>Reviews</a></li>
+                    </ul>
+                </div>
+           </section>
+           <!-- End of Right Section -->
+
+           <!-- Copyright Section -->
+           <div class="copy-section">
+            <p>&copy; 2024 Bruno Coelho. Todos os direitos reservados.</p>
+        </div>
+        <!-- End of Copyright Section -->
+
+    </div>
+    
+    <!-- Non Available Resolution -->
+    <div class="non-available">
+        <p>Please rotate your device to landscape mode for an optimal viewing experience. Thank you.</p>
+    </div>
+
+    <script src="2_main.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Resume |  Bruno Coelho</title>
+    <link rel="stylesheet" href="1_main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script>
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                startFlashing();
+            } else {
+                stopFlashing();
+            }
+        });
+
+        let originalTitle = document.title;
+        let flashingTitle = "Hello are you there?!";
+        let flashing;
+
+        function startFlashing() {
+            flashing = setInterval(function() {
+                document.title = document.title === originalTitle ? flashingTitle : originalTitle;
+            }, 1000);
+        }
+
+        function stopFlashing() {
+            clearInterval(flashing);
+            document.title = originalTitle;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar Section -->
+         <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo image">
+                    <h2>Bruno <span class="danger"> Coelho</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined  close-menu">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="/index.html" title="Dashboard">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="/0_profile.html" title="Profile">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <h3>Profile</h3>
+                </a>
+                <a href="/0_projects.html" title="Projects"  class="active">
+                    <span class="material-symbols-outlined">
+                        receipt_long
+                    </span>
+                    <h3>Projects</h3>
+                </a>
+                <a href="/0_education.html" title="Education">
+                    <span class="material-symbols-outlined">
+                        school
+                    </span>
+                    <h3>Education</h3>
+                </a>
+                <a href="0_diplomas.html" title="Diplomas">
+                    <span class="material-symbols-outlined">
+                        history_edu
+                    </span>
+                    <h3>Diplomas</h3>
+                    <span class="message-count">8</span>
+                </a>
+                <a href="0_reviews.html" title="Reviews">
+                    <span class="material-symbols-outlined">
+                        rate_review
+                    </span>
+                    <h3>Reviews</h3>
+                    <span class="message-count">2</span>
+                </a>
+                <a href="0_page_under.html"  title="Settings">
+                    <span class="material-symbols-outlined">
+                        manufacturing
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+            </div>
+         </aside>
+         <!-- End of Sidebar -->
+
+         <!-- Main Content -->
+        <main class="luxury-main">
+            <div class="luxury-inner">
+                <h2><span class="danger">Online Resume</span> | Project</h2>
+                <h3>Project:</h3>
+                <p>The Online Resume project was conceived with the goal of creating an online resume in the form of a website, where I can showcase my skills, previous projects with previews, contact information, and other relevant details in one accessible and intuitive place. This format allows for a more professional and attractive presentation, in addition to providing the ease of updating as I develop new projects and gain more experience over time. Thus, I can ensure that my profile is always current and aligned with market expectations.</p>
+                <p>I am committed to making my Online Resume a true reflection of my professional and academic journey, highlighting my abilities and contributions in a clear and effective manner. This resource not only facilitates the visualization of my potential but also demonstrates my dedication to innovation and continuous improvement in my field.</p>
+
+                <h3>Objectives:</h3>
+                <ul>
+                    <li><span class="material-symbols-outlined">check_circle</span>Provide a professional and attractive digital platform to showcase my profile and experience to recruiters and companies.</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Develop an intuitive and easy-to-navigate interface for visitors to explore my resume and previous projects.</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Simplify the process of updating my digital resume with new projects, skills, and relevant information.</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Include links to my portfolio and professional social networks to enhance visibility and connection with potential employers.</li>
+                </ul>
+
+                <h2>Technologies <span class="danger">Used:</span></h2>
+                <h3>The project was developed using the following technologies:</h3>
+                <ul>
+                    <li><span class="material-symbols-outlined">check_circle</span>HTML5</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>CSS</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>JavaScript</li>
+                </ul>
+                
+                <h2>Main Features:</h2>
+                <ul>
+                    <li><span class="material-symbols-outlined">check_circle</span>Simple and clear design.</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Dark Mode option.</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Fast and intuitive user experience.</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Use of external icon libraries (Google Fonts, Dev Icons).</li>
+                </ul>
+
+                <h3>Conclusion:</h3>
+                    <p><span class="material-symbols-outlined">check_circle</span>The Online Resume project aims to provide a professional and attractive platform to showcase my skills and experiences to recruiters and companies.</p>
+                    <p><span class="material-symbols-outlined">check_circle</span>Through an intuitive and easy-to-navigate interface, visitors can explore my profile, previous projects, and contact information in an accessible and up-to-date manner. Utilizing technologies such as HTML5, CSS3, and JavaScript, the online resume offers a simple and clear design, including features like Dark Mode.</p>
+                    <p><span class="material-symbols-outlined">check_circle</span>The use of external icon libraries (Google Fonts, Dev Icons) contributes to the site's aesthetics and functionality. This project reflects my commitment to continuous innovation and evolution, ensuring that my profile is always aligned with market expectations</p>
+                    <p><span class="material-symbols-outlined">check_circle</span>Website with a completely redesigned layout.</p>
+                    <p><span class="material-symbols-outlined">check_circle</span>Feel free to explore the website and discover all its features.</p>
+
+                <button class="github-code-btn" ><a href="https://github.com/BrunoKorpuzCoelho/Digital-CV" target="_blank"><span class="material-symbols-outlined commit-git">commit</span>Code on Github</a></button>
+            </div>
+            <!-- End of Main Content -->
+
+            
+        </main>
+        <!-- End of Main -->
+
+          <!-- Right Section -->
+           <section>
+                <div class="right-section">
+                    <!-- Nav -->
+                    <div class="nav">
+                        <button id="menu-btn">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                        <div class="dark-mode">
+                            <span class="material-symbols-outlined active">light_mode</span>
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </div>
+
+                    </div>
+                    <!-- End of Nav -->
+
+                    <!-- User Profile -->
+                    <div class="user-profile">
+                        <div class="logo">
+                            <img src="logo.png" alt="Logo Photo">
+                            <h2>Bruno Coelho</h2>
+                            <p>Fullstack Web <span class="danger-espace">Developer</span></p>
+                        </div>
+                    </div>
+
+                    <div class="resume-profile">
+                        <div class="user-contacts-education">
+                            <div class="logo">
+                                <img src="perfil.png" alt="Profile Photo">
+                                <ul class="data-links-education">
+                                    <li><a href="https://api.whatsapp.com/send/?phone=351965576916&amp;text=Sua%20mensagem%20aqui" target="_blank" rel="noopener noreferrer" title="Whatsapp"><span class="material-symbols-outlined">phone_iphone</span></a></li> 
+                                    <li><a href="mailto:brunovcoelho.dev@gmail.com" title="E-mail"><span class="material-symbols-outlined">alternate_email</span></a></li>
+                                    <li><a href="https://github.com/BrunoKorpuzCoelho" title="Github"><span class="material-symbols-outlined">commit</span></a></li>
+                                    <li><a href="https://www.linkedin.com/in/bruno-coelho-aa4071212/" title="Linkedin"><span class="material-symbols-outlined">link</span></a></li>
+                                    <li><a href="https://www.instagram.com/bruno_coelhooo/" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- End of User Profile -->
+                    
+                </div>
+
+
+                <div class="others-links">
+                    <h3>Additional <span class="danger">Resources:</span></h3>
+                    <ul>
+                        <li><a href="0_diplomas.html"><span class="material-symbols-outlined diplomas">history_edu</span>Diplomas</a></li>
+                        <li><a href="0_projects.html"><span class="material-symbols-outlined projects">receipt_long</span>Projects</a></li>
+                        <li><a href="0_page_under.html"><span class="material-symbols-outlined app-data">info</span>Application Data</a></li>
+                        <li><a href="0_page_under.html"><span class="material-symbols-outlined clone">system_update</span>Updates</a></li>
+                        <li><a href="0_reviews.html"><span class="material-symbols-outlined rate-review">rate_review</span>Reviews</a></li>
+                    </ul>
+                </div>
+           </section>
+           <!-- End of Right Section -->
+
+           <!-- Copyright Section -->
+           <div class="copy-section">
+                <p>&copy; 2024 Bruno Coelho. Todos os direitos reservados.</p>
+            </div>
+        <!-- End of Copyright Section -->
+
+    </div>
+    
+    <!-- Non Available Resolution -->
+    <div class="non-available">
+        <p>Please rotate your device to landscape mode for an optimal viewing experience. Thank you.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="2_main.js"></script>
+    <!-- End of Scripts -->
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile  |  Bruno Coelho</title>
+    <link rel="stylesheet" href="1_main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script>
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                startFlashing();
+            } else {
+                stopFlashing();
+            }
+        });
+
+        let originalTitle = document.title;
+        let flashingTitle = "Hello are you there?!";
+        let flashing;
+
+        function startFlashing() {
+            flashing = setInterval(function() {
+                document.title = document.title === originalTitle ? flashingTitle : originalTitle;
+            }, 1000);
+        }
+
+        function stopFlashing() {
+            clearInterval(flashing);
+            document.title = originalTitle;
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo image">
+                    <h2>Bruno <span class="danger"> Coelho</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined  close-menu">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="/index.html">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="/0_profile.html" class="active">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <h3>Profile</h3>
+                </a>
+                <a href="/0_projects.html">
+                    <span class="material-symbols-outlined">
+                        receipt_long
+                    </span>
+                    <h3>Projects</h3>
+                </a>
+                <a href="/0_education.html">
+                    <span class="material-symbols-outlined">
+                        school
+                    </span>
+                    <h3>Education</h3>
+                </a>
+                <a href="0_diplomas.html">
+                    <span class="material-symbols-outlined">
+                        history_edu
+                    </span>
+                    <h3>Diplomas</h3>
+                    <span class="message-count">8</span>
+                </a>
+                <a href="0_reviews.html">
+                    <span class="material-symbols-outlined">
+                        rate_review
+                    </span>
+                    <h3>Reviews</h3>
+                    <span class="message-count">2</span>
+                </a>
+                <a href="0_page_under.html">
+                    <span class="material-symbols-outlined">
+                        manufacturing
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+            </div>
+         </aside>
+         <!-- End of Sidebar -->
+
+         <!-- Main Content -->
+        <main class="profile-main">
+
+            <div class="profile-content">
+                <div class="profile-header">
+                    <img src="perfil.png" alt="Profile Photo">
+                    <div class="profile-inner">
+                        <h3>Bruno <span class="danger">Veloso</span> Coelho</h3>
+                        <div class="data">
+                            <ul class="data-list">
+                                <li><a href="https://api.whatsapp.com/send/?phone=351965576916&amp;text=Sua%20mensagem%20aqui" target="_blank" rel="noopener noreferrer" title="Whatsapp"><span class="material-symbols-outlined" >phone_iphone</span><span class="text">Whatsapp</span></a></li> 
+                                <li><a href="mailto:brunovcoelho.dev@gmail.com" title="E-mail" target="_blank"><span class="material-symbols-outlined">alternate_email</span><span class="text">E-mail</span></a></li>
+                                <li><a href="https://github.com/BrunoKorpuzCoelho" title="Github" target="_blank"><span class="material-symbols-outlined">commit</span><span class="text">Github</span></a></li>
+                                <li><a href="https://www.linkedin.com/in/bruno-coelho-aa4071212/" title="Linkedin" target="_blank"><span class="material-symbols-outlined">link</span><span class="text">Linkedin</span></a></li>
+                                <li><a href="https://www.instagram.com/bruno_coelhooo_/" title="Instagram"><i class="fab fa-instagram"></i><span class="text">Instagram</span></a></li>
+                                <li><a href="https://www.google.com/maps?q=Lisboa" target="_blank" rel="noopener noreferrer" title="Google Maps"><span class="material-symbols-outlined">pin_drop</span><span class="text">Portugal</span></a></a></li>
+                                <li><a href="" target="_blank" title="Fiverr"><span class="material-symbols-outlined">payments</span><span class="text">Fiverr</span></a></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="license">
+                        <h3>Vehi<span class="danger">cle</span></h3>
+                        <ul>
+                            <li title="Driving License"><span class="material-symbols-outlined translate" >description</span><span>B1 Driving License</span></li>
+                            <li title="Mercedes E320CDI"><span class="material-symbols-outlined translate" >directions_car</span><span>Own Vehicle</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <section class="sections">
+                    <div class="about-me">
+                        <h3 class="danger">About me:</h3>
+                        <p>I am an exceptionally dedicated and responsible individual with a strong team-oriented mindset. I am always prepared to embrace new challenges and contribute with enthusiasm and expertise.</p>
+                    </div>
+
+                    <div class="about-me">
+                        <h3 class="danger">Professional Objective:</h3>
+                        <p>Seeking an opportunity to further develop and enhance my skills in a dynamic environment, where I can continuously grow and contribute to the mutual success of both myself and the company.</p>
+                    </div>
+
+                    <div class="work-resume">
+                        <h3 class="danger">Professional Experience Summary:</h3>
+                        <p>● I have extensive experience working on various programming projects as a freelancer, with a focus on technologies such as Flask and SQL databases. My expertise includes programming languages like HTML5, CSS, JavaScript, and Python.</p>
+                        <p>● I am a professional with 5 years of experience in the automotive industry, specializing in managing a team of 5 mechanics, vehicle reception, parts identification, and preparing cost estimates.</p>
+                    </div>
+
+                    <div class="languages">
+                        <h3 class="danger">Languages:</h3>
+                        <p><span class="material-symbols-outlined translate" >translate</span><span>English Level B1</span></p>
+                        <ul>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span><span>Ability to grasp key points in familiar contexts.</span></li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span>Proficient in simple and coherent expression on personal topics, including narration and explanation.<span></span></li>
+                            <li><span class="material-symbols-outlined check-circle">check_circle</span>Able to engage in basic social interactions, such as ordering food in restaurants or asking for directions, with sufficient clarity and understanding.<span></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="about-me">
+                        <h3 class="danger">Communication Skills:</h3>
+                        <ul>
+                            <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Effective at resolving issues and finding practical solutions.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Adaptable and responsive to changing circumstances.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Capable of guiding and inspiring others towards common goals.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Skilled at analyzing situations and making informed decisions.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Innovative in approaching challenges and generating new ideas.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Efficient in prioritizing tasks and meeting deadlines.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Collaborative and supportive in group settings.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Clear and articulate in verbal expression.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Reliable and accountable for actions and commitments.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Proficient in inspiring and encouraging others.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Energetic and committed to achieving objectives.</li>
+                        <li><span class="material-symbols-outlined add-circle">add_circle</span><span></span>Capable of assessing own performance and seeking improvement.</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-me">
+                        <h3 class="danger">Organizational Skills:</h3>
+                        <ul>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Strong ability to maintain order and structure in tasks and workflows.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Effective in optimizing processes and resources to achieve goals promptly.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Skillful in developing strategic plans and setting clear objectives.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Proficient at identifying and focusing on the most critical tasks.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Capable of efficiently allocating time to meet deadlines and commitments.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Skilled in managing and structuring documents and data systematically.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Meticulous in ensuring accuracy and precision in all aspects of work.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Diligent in tracking progress and ensuring tasks are completed thoroughly.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Ability to distribute tasks efficiently to maximize productivity.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Skill in adjusting plans and work methods as necessary to meet new conditions.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Experience in coordinating all phases of a project, ensuring deadlines and objectives are met.</li>
+                            <li><span class="material-symbols-outlined carry-on-bag">carry_on_bag</span><span></span>Skilled in enhancing efficiency by automating repetitive tasks.</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-me">
+                        <h3 class="danger">Work-Related Skills:</h3>
+                        <ul>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Effective collaboration and cooperation within a team setting.</li>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Clear and professional exchange of information.</li>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Ability to guide and inspire team members.</li>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Proficient in identifying and resolving issues.</li>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Efficient organization and allocation of time to meet deadlines.</li>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Flexibility in adjusting to new conditions and environments.</li>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Proactive in taking actions and making decisions.</li>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Skilled in resolving conflicts and maintaining harmony.</li>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Ensuring accuracy and thoroughness in all tasks.</li>
+                            <li><span class="material-symbols-outlined diversity">diversity_2</span><span></span>Dedicated to providing excellent service and support to clients.</li>
+                        </ul>
+                    </div>   
+
+                    <div class="about-me">
+                        <h3 class="danger">Other Skills:</h3>
+                        <ul>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Understanding of financial principles and practices.</li>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Skilled in using Microsoft Office applications.</li>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Familiarity with project management techniques and tools.</li>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Expertise in analyzing and interpreting data.</li>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Proficient in various programming languages.</li>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Skilled in graphic design principles and software.</li>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Understanding of Customer Relationship Management systems(CRM).</li>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Familiar with principles and practices of information security.</li>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Skilled in negotiation tactics and sales strategies.</li>
+                            <li><span class="material-symbols-outlined token">token</span><span></span>Understanding of cybersecurity principles and practices.</li>
+                        </ul>
+                    </div> 
+
+                </section>
+            </div>
+
+        </main>
+        <!-- End of Main -->
+
+          <!-- Right Section -->
+           <section>
+                <div class="right-section">
+                    <!-- Nav -->
+                    <div class="nav">
+                        <button id="menu-btn">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                        <div class="dark-mode">
+                            <span class="material-symbols-outlined active">light_mode</span>
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </div>
+
+                        <!-- <div class="profile">
+                            <div class="info">
+                                <p>Hey, <b>Bruno</b></p>
+                                <small class="text-muted">Admin</small>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <!-- End of Nav -->
+
+                    <!-- User Profile -->
+                    <div class="user-profile">
+                        <div class="logo">
+                            <img src="logo.png" alt="Logo Photo">
+                            <h2>Bruno Coelho</h2>
+                            <p>Fullstack Web <span class="danger-espace">Developer</span></p>
+                        </div>
+                    </div>
+                    <!-- End of User Profile -->
+
+                    <div class="others-links">
+                        <h3>Additional <span class="danger">Resources:</span></h3>
+                        <ul>
+                            <li><a href="0_diplomas.html"><span class="material-symbols-outlined diplomas">history_edu</span>Diplomas</a></li>
+                            <li><a href="0_projects.html"><span class="material-symbols-outlined projects">receipt_long</span>Projects</a></li>
+                            <li><a href="0_page_under.html"><span class="material-symbols-outlined app-data">info</span>Application Data</a></li>
+                            <li><a href="0_page_under.html"><span class="material-symbols-outlined clone">system_update</span>Updates</a></li>
+                            <li><a href="0_reviews.html"><span class="material-symbols-outlined rate-review">rate_review</span>Reviews</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+           </section>
+           <!-- End of Right Section -->
+
+           <!-- Copyright Section -->
+           <div class="copy-section">
+            <p>&copy; 2024 Bruno Coelho. Todos os direitos reservados.</p>
+        </div>
+        <!-- End of Copyright Section -->
+
+    </div>
+
+    <!-- Non Available Resolution -->
+    <div class="non-available">
+        <p>Please rotate your device to landscape mode for an optimal viewing experience. Thank you.</p>
+    </div>
+
+    <script src="2_main.js"></script>
+</body>
+</html>

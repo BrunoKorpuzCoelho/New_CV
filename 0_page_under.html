@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Under Construction |  Bruno Coelho</title>
+    <link rel="stylesheet" href="1_main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script>
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                startFlashing();
+            } else {
+                stopFlashing();
+            }
+        });
+
+        let originalTitle = document.title;
+        let flashingTitle = "Hello are you there?!";
+        let flashing;
+
+        function startFlashing() {
+            flashing = setInterval(function() {
+                document.title = document.title === originalTitle ? flashingTitle : originalTitle;
+            }, 1000);
+        }
+
+        function stopFlashing() {
+            clearInterval(flashing);
+            document.title = originalTitle;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar Section -->
+         <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo image">
+                    <h2>Bruno <span class="danger"> Coelho</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined  close-menu">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="/index.html" title="Dashboard">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="/0_profile.html" title="Profile">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <h3>Profile</h3>
+                </a>
+                <a href="/0_projects.html" title="Projects">
+                    <span class="material-symbols-outlined">
+                        receipt_long
+                    </span>
+                    <h3>Projects</h3>
+                </a>
+                <a href="/0_education.html" title="Education">
+                    <span class="material-symbols-outlined">
+                        school
+                    </span>
+                    <h3>Education</h3>
+                </a>
+                <a href="0_diplomas.html" title="Diplomas">
+                    <span class="material-symbols-outlined">
+                        history_edu
+                    </span>
+                    <h3>Diplomas</h3>
+                    <span class="message-count">8</span>
+                </a>
+                <a href="0_reviews.html" title="Reviews">
+                    <span class="material-symbols-outlined">
+                        rate_review
+                    </span>
+                    <h3>Reviews</h3>
+                    <span class="message-count">2</span>
+                </a>
+                <a href="0_settings.html"  title="Settings" class="active">
+                    <span class="material-symbols-outlined">
+                        manufacturing
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+            </div>
+         </aside>
+         <!-- End of Sidebar -->
+
+         <!-- Main Content -->
+        <main class="page-in-main">
+            <div class="page-in-wap">
+                    <div class="page-in-inner">
+                        <h2>Thank you for visiting our website. This page is currently under construction as we work hard to bring you a better experience. We apologize for any inconvenience and appreciate your patience. Please check back soon for updates.</h2>
+                        <h2>For any inquiries, please contact us at <a href="mailto:brunovcoelho.dev@gmail.com" title="E-mail"">brunovcoelho.dev@gmail.com</a></h2>
+                    </div>
+            </div>
+            
+            <!-- End of Main Content -->
+
+            <!-- Copyright Section -->
+            <div class="copy-section">
+                <p>&copy; 2024 Bruno Coelho. Todos os direitos reservados.</p>
+            </div>
+            <!-- End of Copyright Section -->
+
+            
+        </main>
+        <!-- End of Main -->
+
+          <!-- Right Section -->
+           <section>
+                <div class="right-section">
+                    <!-- Nav -->
+                    <div class="nav">
+                        <button id="menu-btn">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                        <div class="dark-mode">
+                            <span class="material-symbols-outlined active">light_mode</span>
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </div>
+
+                    </div>
+                    <!-- End of Nav -->
+
+                    <!-- User Profile -->
+                    <div class="user-profile">
+                        <div class="logo">
+                            <img src="logo.png" alt="Logo Photo">
+                            <h2>Bruno Coelho</h2>
+                            <p>Fullstack Web <span class="danger-espace">Developer</span></p>
+                        </div>
+                    </div>
+
+                    <div class="resume-profile">
+                        <div class="user-contacts-education">
+                            <div class="logo">
+                                <img src="perfil.png" alt="Profile Photo">
+                                <ul class="data-links-education">
+                                    <li><a href="https://api.whatsapp.com/send/?phone=351965576916&amp;text=Sua%20mensagem%20aqui" target="_blank" rel="noopener noreferrer" title="Whatsapp"><span class="material-symbols-outlined">phone_iphone</span></a></li> 
+                                    <li><a href="mailto:brunovcoelho.dev@gmail.com" title="E-mail"><span class="material-symbols-outlined">alternate_email</span></a></li>
+                                    <li><a href="https://github.com/BrunoKorpuzCoelho" title="Github"><span class="material-symbols-outlined">commit</span></a></li>
+                                    <li><a href="https://www.linkedin.com/in/bruno-coelho-aa4071212/" title="Linkedin"><span class="material-symbols-outlined">link</span></a></li>
+                                    <li><a href="https://www.instagram.com/bruno_coelhooo/" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- End of User Profile -->
+                    
+                </div>
+
+
+                <div class="others-links">
+                    <h3>Application <span class="danger">Data</span></h3>
+                    <ul>
+                        <li>Name: Online Resume</li>
+                            <li>Version: Y2024 V2.0</li>
+                            <li>Description: Interactive and dynamic digital CV</li>
+                            <li>Author: Bruno Coelho</li>
+                            <li>Release Date: June 26, 2024</li>
+                            <li>License: LFT</li>
+                    </ul>
+                </div>
+           </section>
+           <!-- End of Right Section -->
+
+    </div>
+    
+    <!-- Non Available Resolution -->
+    <div class="non-available">
+        <p>Please rotate your device to landscape mode for an optimal viewing experience. Thank you.</p>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+         var images = document.querySelectorAll('.diplomas-inner img');
+         var modal = document.getElementById('myModal');
+         var modalImg = document.getElementById('modalImg');
+ 
+         images.forEach(function(img) {
+             img.onclick = function(){
+                 modal.style.display = "block"; 
+                 modalImg.src = this.src; 
+                 adjustModalImageSize(); 
+             }
+         });
+ 
+         var spanClose = document.querySelector('.modal .close');
+ 
+         spanClose.onclick = function() {
+             modal.style.display = "none"; 
+         }
+ 
+         document.addEventListener('keydown', function(event) {
+             if (event.key === "Escape") {
+                 modal.style.display = "none"; 
+             }
+         });
+ 
+         window.addEventListener('click', function(event) {
+             if (event.target === modal) {
+                 modal.style.display = "none"; 
+             }
+         });
+ 
+         modal.addEventListener('wheel', function(event) {
+             event.preventDefault();
+             var delta = event.deltaY || event.detail || event.wheelDelta;
+             var scaleFactor = delta > 0 ? 0.8 : 1.2; 
+             scaleImage(scaleFactor);
+         });
+ 
+         function adjustModalImageSize() {
+             var windowWidth = window.innerWidth; 
+             var windowHeight = window.innerHeight;
+             var maxScale = 0.95;
+ 
+             var imageWidth = modalImg.naturalWidth;
+             var imageHeight = modalImg.naturalHeight;
+ 
+             var scaleX = windowWidth / imageWidth * maxScale;
+             var scaleY = windowHeight / imageHeight * maxScale;
+ 
+             var scale = Math.min(scaleX, scaleY);
+ 
+             modalImg.style.transform = "scale(" + scale + ")";
+         }
+ 
+         function scaleImage(factor) {
+             var currentTransform = modalImg.style.transform;
+             var currentScale = parseFloat(currentTransform.replace("scale(", "").replace(")", ""));
+ 
+             var newScale = currentScale * factor;
+ 
+             var maxScale = 0.95;
+             if (newScale > maxScale) {
+                 newScale = maxScale;
+             }
+ 
+             modalImg.style.transform = "scale(" + newScale + ")";
+         }
+ 
+         window.addEventListener('resize', adjustModalImageSize);
+     });
+ 
+ 
+      </script>
+    <script src="2_main.js"></script>
+    <!-- End of Scripts -->
+</body>
+</html>
